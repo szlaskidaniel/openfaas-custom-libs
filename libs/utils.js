@@ -28,7 +28,7 @@ module.exports.callFunction = async (event, functionName, method, body) => {
       headers: event.headers,
       data: body,
     });
-    return resp;
+    return resp?.data;
   } catch (error) {
     let errResp;
     if (error?.response?.status) {
