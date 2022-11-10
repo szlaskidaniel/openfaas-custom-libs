@@ -31,10 +31,11 @@ function buildResponse(context, statusCode, body) {
   //   body: JSON.stringify(event.body),
   //   "content-type": event.headers["content-type"],
   // };
-  if (context)
+  if (context) {
     context["headerValues"] = {
       "Content-Type": "application/json",
     };
-
-  return context?.status(statusCode).succeed(body);
+    return context?.status(statusCode).succeed(body);
+  }
+  return { statusCode, body };
 }

@@ -1,6 +1,6 @@
 {
   "name": "openfaas-custom-libs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "openfaas-custom-libs",
   "main": "index.js",
   "scripts": {
