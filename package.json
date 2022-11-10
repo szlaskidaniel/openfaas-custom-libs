@@ -1,7 +1,7 @@
 {
-  "name": "custom-libs",
+  "name": "openfaas-custom-libs",
   "version": "1.0.1",
-  "description": "custom-libs",
+  "description": "openfaas-custom-libs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
