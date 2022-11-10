@@ -79,3 +79,5 @@ module.exports.callDb = async (event, body) => {
     return;
   }
 };
+
+module.exports = require("./libs/response-lib");
