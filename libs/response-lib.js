@@ -10,6 +10,14 @@ module.exports.notFound = function (context, body) {
   return buildResponse(context, 404, { message: body?.message || "The requested resource was not found." });
 };
 
+module.exports.badRequest = function (context, body) {
+  return buildResponse(context, 400, { message: body?.message || "Bad Request" });
+};
+
+module.exports.notAllowed = function (context, body) {
+  return buildResponse(context, 405, { message: body?.message || "Method Not Allowed" });
+};
+
 module.exports.unauthorized = function (context) {
   return buildResponse(context, 403, { message: "You are not authorized to perform the requested action." });
 };
